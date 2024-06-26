@@ -7,12 +7,16 @@ Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility 
 
 🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+# Syncing
 
-## Sponsors
+Initial command for syncing
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+```bash
+npx quartz sync --no-pull
+```
+
+Sync command
+
+```bash
+npx quartz sync
+```
