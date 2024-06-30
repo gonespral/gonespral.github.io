@@ -20,3 +20,10 @@ Sync command
 ```bash
 npx quartz sync
 ```
+
+Serve command
+```
+npx quartz build --serve
+```
+
+
