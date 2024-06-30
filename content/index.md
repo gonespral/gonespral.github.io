@@ -1,9 +1,10 @@
 ---
-title: Welcome to Quartz
+title: Welcome!
 ---
 
-Woohoo! Here we go
+Welcome to my personal page.
 
-Testing... can you see this?
+Currently under construction, but I want to eventually write about my personal projects, including:
 
-Check out my [[pics]]
+1. [[radio-telescope|Tiny Radio Telescope]]
+2. [[hacking-cars|Hacking Cars]]
