@@ -6,11 +6,12 @@ title: Welcome!
   <img src="attachments/me2.jpg" alt="drawing" width="200" style="margin-right: 20px;"/>
   <div>
     <p>
-      Hello! I'm [Your Name], and this is my personal website. I'm passionate about technology, 
+      Hello! I'm Gonçalo, and this is my personal website. I'm passionate about technology, 
       innovation, and [other interests]. Currently, I'm working on several exciting projects 
       that combine my interests in radio astronomy, automotive technology, and signal processing.
     </p>
   </div>
+  
 </div>
 
 ---
