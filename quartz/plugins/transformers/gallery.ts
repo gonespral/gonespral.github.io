@@ -20,11 +20,19 @@ const defaultOptions: Options = {
 
 export interface ImgGalleryParsedData {
   path: string;
+  columns?: number;
+  spacing?: string;
+  height?: number;
+  radius?: number;
 }
 
 export interface GalleryCodeNodeData {
   blockIndex: number
   images: Array<Image>
+  columns: number
+  spacing: string
+  height: number
+  radius: number
 }
 
 export const GalleryTransformer: QuartzTransformerPlugin<Partial<Options> | undefined> = (
@@ -68,6 +76,10 @@ export const GalleryTransformer: QuartzTransformerPlugin<Partial<Options> | unde
                       galleryData.push({
                         blockIndex: index,
                         images: new Array<Image>(),
+                        columns: data.columns || 3,  // Default to 3 columns if not specified
+                        spacing: data.spacing || "10px",  // Default to 10px spacing if not specified
+                        height: data.height || 240,  // Default height of 240px if not specified
+                        radius: data.radius || 8  // Default radius of 8px if not specified
                       } as GalleryCodeNodeData) - 1
 
                     // Go through each image we find and store its data as an Image Node.
@@ -92,8 +104,23 @@ export const GalleryTransformer: QuartzTransformerPlugin<Partial<Options> | unde
             galleryData
               .sort((a, b) => b.blockIndex - a.blockIndex)
               .forEach((gallery) => {
-                // Remove the Code block and put in all of our images!
-                tree.children.splice(gallery.blockIndex, 1, ...gallery.images)
+                // Create a grid structure with columns and spacing
+                const gridContainer = {
+                  type: "html",
+                  value: `<div class="image-gallery" style="display: grid; grid-template-columns: repeat(${gallery.columns}, 1fr); gap: ${gallery.spacing};">`,
+                }
+                const gridEnd = {
+                  type: "html",
+                  value: `</div>`,
+                }
+
+                const imageNodes = gallery.images.map(image => ({
+                  type: "html",
+                  value: `<a href="${image.url}" class="lightbox"><img src="${image.url}" style="width: 100%; height: ${gallery.height}px; object-fit: cover; border-radius: ${gallery.radius}px;" /></a>`
+                }))
+
+                // Remove the Code block and put in the grid container, images, and grid end
+                tree.children.splice(gallery.blockIndex, 1, gridContainer, ...imageNodes, gridEnd)
               })
           }
         },
