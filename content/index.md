@@ -2,7 +2,7 @@
 title: index
 ---
 
-Hi!
+Hi! Test
 
 [[projects]]
 
