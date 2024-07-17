@@ -2,7 +2,7 @@
 title: index
 ---
 
-<img src="attachments/me/me2.jpg" align="right" width="40%" style="margin-top: 0px; margin-left: 20px;">
+<img src="attachments/me/me4-orange.jpg" align="right" width="40%" style="margin-top: 0px; margin-left: 20px;">
 
 
 Hi! I'm Gonçalo - currently studying Aerospace Engineering at [TU Delft](https://www.tudelft.nl/en/). I'm passionate about space flight and exploration, machine learning, and anything tech, really. In my free time, I like to read textbooks, [[pics|take pictures]] and work on side projects.
@@ -15,7 +15,6 @@ Always learning.
 Feel free to [reach out to me](contact) if you'd like to discuss any of my projects or collaborate!
 
 <!-- <p style="clear:both;"></p> -->
-
 
 <!-- <iframe src="projects" width="45%" height="500px" style="border-radius: 10px;"></iframe> -->
 
@@ -37,6 +36,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <div align="left">
   <img src="attachments/me/Logo.png" width="10%">
 </div>
-
-> ![Test]
-> dejude
