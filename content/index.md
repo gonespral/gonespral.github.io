@@ -2,10 +2,10 @@
 title: index
 ---
 
-<img src="attachments/me/me2.jpg" align="right" width="40%" style="margin: 10px;">
+<img src="attachments/me/me2.jpg" align="right" width="40%" style="margin-top: 0px; margin-left: 20px;">
 
 
-Hi! I'm Gonçalo - currently studying Aerospace Engineering at [TU Delft](https://www.tudelft.nl/en/). I'm passionate about space flight and exploration, machine learning, and anything tech, really. In my free time, I like to read textbooks, [[pics|take pictures]] and work on [[projects|side projects]].
+Hi! I'm Gonçalo - currently studying Aerospace Engineering at [TU Delft](https://www.tudelft.nl/en/). I'm passionate about space flight and exploration, machine learning, and anything tech, really. In my free time, I like to read textbooks, [[pics|take pictures]] and work on side projects.
 
 Always learning.
 
@@ -21,7 +21,16 @@ Feel free to [reach out to me](contact) if you'd like to discuss any of my proje
 
 ## Projects
 
-### [[social-media]]
+### [[wavewings|WaveWings]]
+
+<span style="font-size: 10; font-style: italic;">January 2020</span>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+### [[social-media|Social Media Bot]]
+
+<span style="font-size: 10; font-style: italic;">January 2020</span>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
