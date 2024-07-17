@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Gonçalo Nespral 🌍",
+    pageTitle: "🌍 Gonçalo Nespral", //
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -22,7 +22,7 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
+        header: "Rokkitt",//"Source Sans Pro",
         body: "Source Sans Pro",
         code: "IBM Plex Mono",
       },
@@ -69,6 +69,7 @@ const config: QuartzConfig = {
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
+      Plugin.GalleryTransformer(),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [

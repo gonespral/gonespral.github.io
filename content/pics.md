@@ -2,12 +2,7 @@
 title: Pics
 ---
 
-# Section 1 
-
-foo bar 
-
-
-## Subsection 1
-
-# Section 2
-
+```img-gallery
+path: attachments/pics
+columns: 3
+```
