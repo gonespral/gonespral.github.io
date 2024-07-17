@@ -1,20 +1,22 @@
 ---
 title: Welcome!
+tags: "#index"
 ---
 
+<!-- 
 <div style="display: flex; align-items: flex-start;">
   <img src="attachments/me2.jpg" alt="drawing" width="200" style="margin-right: 20px;"/>
   <div>
     <p>
-      Hello! Welcome to my corner of the internet. I'm passionate about technology, 
-      innovation, and [other interests]. Currently, I'm working on several exciting projects 
-      that combine my interests in radio astronomy, automotive technology, and signal processing.
+      Hi!  
     </p>
   </div>
  
-</div>
+</div> -->
 
 ---
+
+Hi!
 
 ## My Projects
 
