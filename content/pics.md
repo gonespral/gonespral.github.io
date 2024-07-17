@@ -1,5 +1,5 @@
 ---
-title: Pics
+title: Photography
 ---
 
 ```img-gallery
