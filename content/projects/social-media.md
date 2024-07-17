@@ -1,3 +1,3 @@
 ---
-title: "Social Media"
+title: "Social Media Bot"
 ---

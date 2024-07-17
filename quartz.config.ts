@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🌍 Gonçalo Nespral", //
+    pageTitle: "Gonçalo Nespral", //🌍 
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -22,20 +22,20 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Source Sans Pro",
-        body: "Source Sans Pro",
+        header: "DM Serif Display", // "Source Sans Pro",
+        body: "Source Sans Pro", // "Source Sans Pro",
         code: "IBM Plex Mono",
       },
-      colors: {
+      colors: { // https://stephango.com/flexoki
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "rgb(255, 252, 240)",
+          lightgray: "rgb(242, 240, 229)",
+          gray: "rgb(183, 181, 172)",
+          darkgray: "rgb(111, 110, 105)",
+          dark: "rgb(16, 15, 15)",
+          secondary: "rgb(32, 94, 166)",
+          tertiary: "rgb(36, 131, 123)",
+          highlight: "rgba(22, 71, 127, 0.1)",
         },
         darkMode: {
           light: "#161618",
@@ -47,6 +47,27 @@ const config: QuartzConfig = {
           tertiary: "#84a59d",
           highlight: "rgba(143, 159, 169, 0.15)",
         },
+        // colors: {
+        //   lightMode: {
+        //     light: "#faf8f8",
+        //     lightgray: "#e5e5e5",
+        //     gray: "#b8b8b8",
+        //     darkgray: "#4e4e4e",
+        //     dark: "#2b2b2b",
+        //     secondary: "#284b63",
+        //     tertiary: "#84a59d",
+        //     highlight: "rgba(143, 159, 169, 0.15)",
+        //   },
+        //   darkMode: {
+        //     light: "#161618",
+        //     lightgray: "#393639",
+        //     gray: "#646464",
+        //     darkgray: "#d4d4d4",
+        //     dark: "#ebebec",
+        //     secondary: "#7b97aa",
+        //     tertiary: "#84a59d",
+        //     highlight: "rgba(143, 159, 169, 0.15)",
+        //   },
       },
     },
   },
