@@ -28,13 +28,13 @@ const config: QuartzConfig = {
       },
       colors: { // https://stephango.com/flexoki
         lightMode: {
-          light: "#FFFCF0",
-          lightgray: "rgb(242, 240, 229)",
-          gray: "rgb(183, 181, 172)",
-          darkgray: "rgb(111, 110, 105)",
-          dark: "rgb(16, 15, 15)",
-          secondary: "#2364AA",
-          tertiary: "#3DA5D9",
+          light: "rgb(16, 15, 15)",
+          lightgray: "rgb(87, 86, 83)",
+          gray: "rgb(135, 133, 128)",
+          darkgray: "rgb(206, 205, 195)",
+          dark: "rgb(206, 205, 195)",
+          secondary: "#3DA5D9",
+          tertiary: "#2364AA",
           highlight: "rgba(22, 71, 127, 0)",
         },
         darkMode: {
@@ -47,6 +47,31 @@ const config: QuartzConfig = {
           tertiary: "#2364AA",
           highlight: "rgba(22, 71, 127, 0)",
         },
+
+      // DARK LIGHT
+      // colors: { // https://stephango.com/flexoki
+      //   lightMode: {
+      //     light: "#FFFCF0",
+      //     lightgray: "rgb(242, 240, 229)",
+      //     gray: "rgb(183, 181, 172)",
+      //     darkgray: "rgb(111, 110, 105)",
+      //     dark: "rgb(16, 15, 15)",
+      //     secondary: "#2364AA",
+      //     tertiary: "#3DA5D9",
+      //     highlight: "rgba(22, 71, 127, 0)",
+      //   },
+      //   darkMode: {
+      //     light: "rgb(16, 15, 15)",
+      //     lightgray: "rgb(87, 86, 83)",
+      //     gray: "rgb(135, 133, 128)",
+      //     darkgray: "rgb(206, 205, 195)",
+      //     dark: "rgb(206, 205, 195)",
+      //     secondary: "#3DA5D9",
+      //     tertiary: "#2364AA",
+      //     highlight: "rgba(22, 71, 127, 0)",
+      //   },
+
+      // ORIGINAL
         // colors: {
         //   lightMode: {
         //     light: "#faf8f8",
