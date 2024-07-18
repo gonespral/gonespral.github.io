@@ -8,7 +8,8 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/gonespral",
-      LinkedIn: "https://linked.in/gonespral"
+      LinkedIn: "https://linked.in/gonespral",
+      Hackaday: "https://hackaday.io/projects/hacker/297599"
     },
   }),
 }
@@ -29,8 +30,8 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(Component.Explorer()),
   ],
   right: [
-    // Component.RecentNotes({ title: "Most Recent", limit: 3, showTags: true}),
-    // Component.Graph(),
+    Component.DesktopOnly(Component.Graph()), 
+    Component.DesktopOnly(Component.RecentNotes({ title: "Recently Added", limit: 5})),
     // Component.DesktopOnly(Component.Explorer()),
     // Component.DesktopOnly(Component.TableOfContents()),
     //Component.DesktopOnly(Component.TableOfContents()),
@@ -48,5 +49,8 @@ export const defaultListPageLayout: PageLayout = {
     //Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer()),
   ],
-  right: [],
+  right: [
+    Component.DesktopOnly(Component.Graph()), 
+    Component.DesktopOnly(Component.RecentNotes({ title: "Recently Added", limit: 5})),
+  ],
 }
