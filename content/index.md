@@ -9,8 +9,7 @@ Always learning.
 
 Feel free to [reach out to me](contact) if you'd like to discuss any of my projects or collaborate!
 
-
-<!-- <script>
+<script>
   // Detect which theme is currently active
   const theme = localStorage.getItem('theme') || 'light'
   document.dispatchEvent(new CustomEvent('themechange', { detail: { theme } }))
@@ -23,7 +22,7 @@ Feel free to [reach out to me](contact) if you'd like to discuss any of my proje
     logo.innerHTML = '<img src='attachments/me/logo_white.png' width='15%'>'
   }
   document.body.appendChild(logo)
-</script> -->
+</script>
 
 <div id="logo">
   <img src="attachments/me/logo_white.png" width="15%">
