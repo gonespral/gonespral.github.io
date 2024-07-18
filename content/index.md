@@ -18,7 +18,7 @@ Feel free to [reach out to me](contact) if you'd like to discuss any of my proje
 <!-- <div style="width: 5px; height: 20pt;"></div> -->
 
 <div align="left" id="logo">
-  <img src="attachments/me/Logo_white.png" width="15%">
+  <img src="attachments/me/logo_white.png" width="15%">
 </div>
 
 <script>
