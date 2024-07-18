@@ -2,12 +2,8 @@
 title: index
 ---
 
-<img src="attachments/me/me4-orange.jpg" align="justify" width="45%" style="margin-top: 0px; margin-left: 20px;">
-
-<div style="width: 5px; height: 50;"></div>
-
-
-Hi! I'm Gonçalo - currently studying Aerospace Engineering at TU Delft. I'm passionate about space, engineering, computers, and anything tech, really. In my free time, I like to read, [[pics|take pictures]] and work on [[projects|side projects]].
+![[me4.jpg]]
+Hi! I'm Gonçalo - currently studying Aerospace Engineering at TU Delft. I'm passionate about space, engineering, computers, and anything tech, really. In my free time, I like to [[reading|read]], [[pics|take pictures]] and work on [[projects|side projects]].
 
 Always learning.
 
@@ -19,7 +15,22 @@ Feel free to [reach out to me](contact) if you'd like to discuss any of my proje
 <!-- <iframe src="projects" width="45%" height="500px" style="border-radius: 10px;"></iframe> -->
 
 
-<div style="width: 5px; height: 50;"></div>
+<!-- <div style="width: 5px; height: 20pt;"></div> -->
+
+<div align="left" id="logo">
+  <img src="attachments/me/Logo_white.png" width="15%">
+</div>
+
+<script>
+  document.addEventListener('themechange', (e) => {
+    const logo = document.getElementById('logo').querySelector('img')
+    logo.src = `attachments/me/logo_${e.detail.theme === 'light' ? 'white' : 'black'}.png`
+  })
+</script>
+
+
+
+
 
 <!-- ## Projects
 
@@ -71,7 +82,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <span style="font-size: 10; font-style: italic;">January 2020</span>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. -->
-
-<div align="left">
-  <img src="attachments/me/Logo_white.png" width="15%">
-</div>

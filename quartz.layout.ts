@@ -29,7 +29,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(Component.Explorer()),
   ],
   right: [
-    Component.RecentNotes({ title: "Most Recent", limit: 3, showTags: true}),
+    // Component.RecentNotes({ title: "Most Recent", limit: 3, showTags: true}),
     // Component.Graph(),
     // Component.DesktopOnly(Component.Explorer()),
     // Component.DesktopOnly(Component.TableOfContents()),
@@ -44,7 +44,7 @@ export const defaultListPageLayout: PageLayout = {
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Search(),
+    Component.DesktopOnly(Component.Search()),
     Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer()),
   ],
