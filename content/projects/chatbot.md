@@ -3,7 +3,7 @@ title: "Teaching a Chatbot Domain-Specific Knowledge"
 date: 01-16-2023
 ---
 
-> [!question]
+> [!question] Note
 >
 > Check out the original post [here](https://www.linkedin.com/pulse/using-gpt-3-teach-chatbot-domain-specific-knowledge-gon%C3%A7alo-nespral-1e/?trackingId=H8KVzy5gTFueviSpSPBHwQ%3D%3D)
 

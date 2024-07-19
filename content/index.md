@@ -6,7 +6,7 @@ title: index
 <img src="attachments/me/me4.jpg" width="50%">
 </center>
 
-Hi! I'm Gonçalo - currently studying Aerospace Engineering at TU Delft. I'm passionate about space, engineering, computers, and anything tech, really. In my free time, I like to [[reading|read]], [[pics|take pictures]] and work on [[projects|side projects]].
+Hi! I'm Gonçalo - 22 and currently studying Aerospace Engineering at TU Delft. I'm passionate about space, engineering, computers, and anything tech, really. In my free time, I like to work on [[projects|side projects]], take [[pics|pictures]] and [[reading|read]].
 
 Always learning.
 

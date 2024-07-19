@@ -3,7 +3,7 @@ title: "Hacking Cars"
 date: 11-5-2018
 ---
 
-> [!question]
+> [!question] Note
 >
 > Check out the original post [here](https://hackaday.io/project/164566-how-to-hack-a-car)
 
@@ -18,7 +18,7 @@ Most car manufacturers nowadays use a keyless entry system called rolling codes.
 The data is transmitted from the keyfob to the car over radio (usually within the ISM band - radio bands reserved internationally for industrial, scientific and medical purposes instead of telecommunications). At the most basic level, this data is usually modulated using on-off keying (OOK) in which binary bits are transmitted one by one (a high power level for a one, and a low power level for a zero). Since keyfobs don't have to transmit large amounts of data, the data rate (or baud rate) is pretty low (meaning each binary bit lasts longer). This means that these signals can be easily received and decoded with just a few lines of python.
 
 <center>
-<img src="attachments/projects/hacking-cars/1.png" width="50%">
+<img src="attachments/projects/hacking-cars/1.png" width="40%">
 </center>
 
 In my case, the keyfob data was modulated using Frequency Shift Keying (FSK), a more complex modulation method in which frequency is changed instead of power level. In the end, you pretty much achieve the same result.  
@@ -29,7 +29,9 @@ To learn about his method in more detail, I recommend you watch his DEF CON talk
 
 Here's a screenshot from Samy's presentation:
 
-![](https://cdn.hackaday.io/images/1171231553679717418.png)
+<center>
+<img src="attachments/projects/hacking-cars/2.png" width="80%">
+</center>
 
 # Acquiring the Signal
 
@@ -37,15 +39,26 @@ For this attack, I used a [YARD Stick one](https://greatscottgadgets.com/yards
 
 First of all, I had to find the frequency the keyfob was operating at. To do that, I used GQRX and the RTL-SDR:
 
+<center>
+<img src="attachments/projects/hacking-cars/3.gif" width="80%">
+</center>
+
 Here, we see two spikes. This indicates that the type of modulation being used is FSK, at around 868MHz. 
 
 This the GNURadio flow graph:
 
-![](https://cdn.hackaday.io/images/9794641553680429857.png)
+<center>
+<img src="attachments/projects/hacking-cars/4.png" width="80%">
+</center>
 
 The output is simply raw data, that is then processed by my python script to obtain hex values for every piece of the data. (I did this so long ago that I can't even remember what most of these blocks actually do, so if you want to figure that out, go ahead).
 
 When the keyfob is pressed, this is what the GNURadio output looks like:
+
+
+<center>
+<img src="attachments/projects/hacking-cars/5.gif" width="80%">
+</center>
 
 The flow graph also contains a tagged file sink, which contains raw digital data. However, to convert this to a nice stream of binary bits, we need to figure out the right baud rate. I found [this](https://www.youtube.com/watch?v=rQkBDMeODHc) talk by Michael Ossmann, where he talks about a script he wrote which automatically syncs to the right clock frequency, allowing us to decode the data very nicely.
 
@@ -57,9 +70,9 @@ The code actually consists of two scripts, one which runs the GNURadio flowgraph
 
 Heres a GIF of me testing the code for the first time.
 
-I have included the link to the repo in the links section of this project. (Also yeah I know, YARDRAGE is a bit of a weird name.) 
-
-Note: Sorry for the very messy code, but come on, this is two years old. 
+<center>
+<img src="attachments/projects/hacking-cars/6.gif" width="80%">
+</center>
 
   
 Samy is my hero.
