@@ -30,8 +30,8 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(Component.Explorer()),
   ],
   right: [
-    Component.DesktopOnly(Component.Graph()), 
-    Component.DesktopOnly(Component.RecentNotes({ title: "Recently Added", limit: 5})),
+    //Component.DesktopOnly(Component.Graph()), 
+    //Component.DesktopOnly(Component.RecentNotes({ title: "Recently Added", limit: 5})),
     // Component.DesktopOnly(Component.Explorer()),
     // Component.DesktopOnly(Component.TableOfContents()),
     //Component.DesktopOnly(Component.TableOfContents()),
@@ -50,7 +50,7 @@ export const defaultListPageLayout: PageLayout = {
     Component.DesktopOnly(Component.Explorer()),
   ],
   right: [
-    Component.DesktopOnly(Component.Graph()), 
-    Component.DesktopOnly(Component.RecentNotes({ title: "Recently Added", limit: 5})),
+    //Component.DesktopOnly(Component.Graph()), 
+    //Component.DesktopOnly(Component.RecentNotes({ title: "Recently Added", limit: 5})),
   ],
 }
