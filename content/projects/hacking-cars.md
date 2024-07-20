@@ -3,7 +3,7 @@ title: "Hacking Cars"
 date: 11-5-2018
 ---
 
-> [!question] Note
+> [!note] 
 >
 > Check out the original post [here](https://hackaday.io/project/164566-how-to-hack-a-car)
 
