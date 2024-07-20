@@ -3,7 +3,7 @@ title: Radio Telescope
 date: 02-10-2018
 ---
 
-> [!note] 
+> [!tip] 
 >
 > Check out the original post [here](https://hackaday.io/project/161556-tiny-radio-telescope/details)
 
@@ -21,12 +21,11 @@ The idea is to have a motorised satellite dish, which can be controlled by a Ras
 <center>
     <div style="display: flex; justify-content: center;">
         <video src="attachments/projects/radio-telescope/2.mp4" controls height="300" style="margin-right: 10px;"></video>
-        <video src="attachments/projects/radio-telescope/1.mp4" controls height="300" style="margin-left: 10px;"></video>
     </div>
 </center>
 
 
-# Moving the Dish
+## Moving the Dish
 
 I used 3D printed parts I designed to build each axis to move the dish. What I built is essentially and [alt-azimuth mount](https://en.wikipedia.org/wiki/Altazimuth_mount) for the satellite dish. 
 
@@ -43,7 +42,7 @@ I used 3D printed parts I designed to build each axis to move the dish. What I b
     <img src="attachments/projects/radio-telescope/3.jpeg" width="70%">
 </center>
 
-# Receiving the Signal on a Raspberry Pi
+## Receiving the Signal on a Raspberry Pi
 
 For the Raspberry Pi to be able to measure the power of the signal being received, I used a satellite finder. These are devices used to align antennas after they are installed. They are usually built with a buzzer, which changes pitch depending on the amount of signal being received. For my project, I removed the buzzer and soldered two wires onto the pads where the buzzer used to be:  
 
@@ -56,8 +55,6 @@ The current on these two wires (when the device is operating) is directly propor
 <center>
     <img src="attachments/projects/radio-telescope/5.jpeg" width="70%">
 </center>
-
-# Everything Wired Up
 
 The two relays you can see in the picture below are attached to each of the power supplies for the stepper motors. This was done to prevent the stepper motors overheating by holding their position when they really didn't have to (for example, when the dish is scanning horizontally on a certain altitude, the altitude doesn't change so that stepper motor isn't needed, and its power is cut off. When the horizontal scan stops and the altitude has to be changed again, the power is switched back on).
 
@@ -79,7 +76,22 @@ I then tested the radio telescope outside, but I wasn't able to get any good res
 
 I consider this project more of an experiment, to see what can be done with a relatively low cost (and tiny) radio telescope. Even though the results aren't great, I learned **a lot** as I worked on this project (about radio astronomy (and radio in general), how to use the Raspberry Pi to communicate with sensors and motors, and how to design my own 3D printed parts). Hopefully, I can apply these skills to future projects.
 
-> [!note]
->
-> [www.youtube.com/watch?v=aeah3fFYlnA](http://www.youtube.com/watch?v=aeah3fFYlnA) - the Thought Emporium's radio telescope - check out his other videos they're pretty cool
+# Further Work
+
+Building on what I learned from this initial, small scale experiment, I wanted to create a slightly larger radio telescope, capable of observing signals on the 21cm hydrogen line. To do so I sketched up some design concepts for the telescope project. These are shown below:
+
+<!-- <center>
+    <img src="attachments/projects/radio-telescope/main_assembly_1.jpeg" width="70%">
+    <img src="attachments/projects/radio-telescope/main_assembly_2.jpeg" width="70%">
+    <img src="attachments/projects/radio-telescope/main_assembly_3.jpeg" width="70%">
+    <img src="attachments/projects/radio-telescope/main_assembly_4.jpeg" width="70%">
+    <img src="attachments/projects/radio-telescope/main_assembly_5.jpeg" width="70%">
+    <img src="attachments/projects/radio-telescope/configuration.jpeg" width="70%">
+</center> -->
+
+I ordered this LNA (*32 dB* Gain) and attached it to my horn antenna which will be used as a feed for the 1.2m dish.
+
+I built the feed horn by soldering an HVAC adapter to a baby food can, and drilling a hole in the side where I inserted a 90 degree coaxial F-connector and soldered it in place. The dimensions for this aren't perfect, but hopefully it'll work well enough to be able to receive the hydrogen line.
+
+
 
