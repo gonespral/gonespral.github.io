@@ -7,8 +7,7 @@ This is a project carried out for the [Design Synthesis Exercise](https://www.tu
 
 > [!tip]- Read the full report
 >
-> You can download the paper on the TU Delft repository [here](https://repository.tudelft.nl/record/uuid:0fa058b7-61b4-40fe-85f7-a686cf0c7425), or view it below.
-> <iframe src="attachments/projects/wavewings/Final_Report_Draft_WaveWings_DSE_05.pdf" width="100%" height="1100"></iframe>
+> You can download the paper on the TU Delft repository [here](https://repository.tudelft.nl/record/uuid:0fa058b7-61b4-40fe-85f7-a686cf0c7425).
 
 > [!tip]- Check out the poster
 >
