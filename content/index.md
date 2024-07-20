@@ -3,7 +3,7 @@ title: index
 ---
 
 <center>
-<img src="attachments/me/me4.jpg" width="50%">
+<img src="attachments/me/me2.jpg" width="40%">
 </center>
 
 Hi! I'm Gonçalo - 22 and currently studying Aerospace Engineering at TU Delft. I'm passionate about space, engineering, computers, and anything tech, really. In my free time, I like to work on [[projects|side projects]], take [[pics|pictures]] and [[reading|read]].
