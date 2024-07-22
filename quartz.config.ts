@@ -29,7 +29,7 @@ const config: QuartzConfig = {
       colors: { // https://stephango.com/flexoki
         lightMode: {
           light: "#F9F9F9",
-          lightgray: "rgb(242, 240, 229)",
+          lightgray: "#ebe8e8",
           gray: "rgb(183, 181, 172)",
           darkgray: "rgb(111, 110, 105)",
           dark: "#353535",

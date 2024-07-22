@@ -6,19 +6,15 @@ title: Welcome
 <img src="attachments/me/me2.jpg" width="30%">
 </center>
 
-> [!attention]
->
-> Site is still under construction
-
 Hi! I'm Gonçalo - 22 and currently studying Aerospace Engineering at TU Delft. I'm passionate about space, engineering, computers, and anything tech, really. In my free time, I like to work on [[projects|side projects]], take [[pics|pictures]] and [[reading|read]].
 
 Always learning.
 
 Feel free to [reach out to me](contact) if you'd like to discuss any of my projects or collaborate!
 
-<div id="logo">
+<!-- <div id="logo">
   <img src="attachments/me/logo_black.png" width="15%">
-</div>
+</div> -->
 
 <!-- <script>
   // Detect which theme is currently active
@@ -47,7 +43,11 @@ Feel free to [reach out to me](contact) if you'd like to discuss any of my proje
   })
 </script> -->
 
---- 
+## Recent Posts
 
-# Recent Posts
+## [[wavewings|WaveWings]]
+
+
+### [[rebo|Project REBO]] 
+A project I've been working on for the past few months. It's a small rover that I'm building from scratch. Check it out!
 

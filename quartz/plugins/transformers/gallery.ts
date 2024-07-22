@@ -4,7 +4,7 @@ import { visit } from "unist-util-visit"
 import yaml from "js-yaml"
 import fs from "fs"
 import path from "path"
-import { FilePath, slugifyFilePath, pathToRoot } from "../../util/path"
+import { FilePath, slugifyFilePath } from "../../util/path"
 import { resolve } from "path/posix"
 
 export interface Options {
@@ -20,6 +20,8 @@ export interface ImgGalleryParsedData {
   columns?: number;
   spacing?: string;
   radius?: number;
+  uniform?: boolean;
+  shadow?: number; // Added shadow parameter
 }
 
 export interface GalleryCodeNodeData {
@@ -28,6 +30,8 @@ export interface GalleryCodeNodeData {
   columns: number
   spacing: string
   radius: number
+  uniform: boolean
+  shadow: number // Added shadow parameter
 }
 
 export const GalleryTransformer: QuartzTransformerPlugin<Partial<Options> | undefined> = (
@@ -63,11 +67,13 @@ export const GalleryTransformer: QuartzTransformerPlugin<Partial<Options> | unde
                         images: new Array<Image>(),
                         columns: data.columns || 3,
                         spacing: data.spacing || "10px",
-                        radius: data.radius || 8
+                        radius: data.radius || 8,
+                        uniform: data.uniform || false,
+                        shadow: data.shadow || 0, // Default to 0 if not provided
                       } as GalleryCodeNodeData) - 1
 
                     imagesPaths.forEach((imagePath) => {
-                      const url = slugifyFilePath(imagePath as FilePath)
+                      const url =  "/" + data.path + "/" + slugifyFilePath(imagePath as FilePath)
                       galleryData[currentGalleryIndex].images.push({
                         type: "image",
                         url: url,
@@ -87,7 +93,7 @@ export const GalleryTransformer: QuartzTransformerPlugin<Partial<Options> | unde
               .forEach((gallery) => {
                 const columnContainers = Array.from({ length: gallery.columns }, (_, i) => ({
                   type: "html",
-                  value: `<div class="image-column" style="flex: 1; display: flex; flex-direction: column; gap: ${gallery.spacing};">`,
+                  value: `<div class="image-column">`,
                 }))
                 const columnEnds = Array.from({ length: gallery.columns }, (_, i) => ({
                   type: "html",
@@ -96,9 +102,13 @@ export const GalleryTransformer: QuartzTransformerPlugin<Partial<Options> | unde
 
                 let imageNodes = gallery.images.reduce((acc, image, index) => {
                   const columnIndex = index % gallery.columns
+                  const shadowValue = gallery.shadow > 0 ? `0 4px 8px rgba(0, 0, 0, ${gallery.shadow})` : 'none';
+                  const style = gallery.uniform
+                    ? `width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: ${gallery.radius}px; box-shadow: ${shadowValue};`
+                    : `width: 100%; object-fit: contain; border-radius: ${gallery.radius}px; box-shadow: ${shadowValue};`
                   acc[columnIndex].push({
                     type: "html",
-                    value: `<a href="${image.url}" class="lightbox"><img src="${image.url}" style="width: 100%; object-fit: contain; border-radius: ${gallery.radius}px;" /></a>`
+                    value: `<div class="image-item"><img src="${image.url}" class="gallery-image" style="${style}" onclick="openPopup('${image.url}')" /></div>`
                   })
                   return acc
                 }, Array.from({ length: gallery.columns }, () => []))
@@ -108,12 +118,94 @@ export const GalleryTransformer: QuartzTransformerPlugin<Partial<Options> | unde
                   combinedNodes.push(columnContainers[i], ...imageNodes[i], columnEnds[i])
                 }
 
+                const overlayScript = `
+                <style>
+                .image-gallery {
+                display: flex;
+                gap: ${gallery.spacing};
+                }
+
+                .image-column {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: ${gallery.spacing};
+                }
+
+                .image-item img {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+
+                .image-item img:hover {
+                transform: scale(0.97);
+                }
+
+                .popup-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                backdrop-filter: blur(8px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s, opacity 0.3s ease;
+                z-index: 1000;
+                }
+
+                .popup-overlay.visible {
+                visibility: visible;
+                opacity: 1;
+                }
+
+                .popup-content {
+                max-width: 90%;
+                max-height: 90%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+
+                .popup-content img {
+                width: 60%;
+                height: auto;
+                border-radius: ${gallery.radius}px;
+                }
+                </style>
+
+                <script>
+                function openPopup(url) {
+                const overlay = document.getElementById('popup-overlay');
+                const content = document.getElementById('popup-content');
+                content.src = url;
+                overlay.classList.add('visible');
+                }
+
+                function closePopup() {
+                const overlay = document.getElementById('popup-overlay');
+                overlay.classList.remove('visible');
+                }
+                </script>
+                `;
+
+                const popupHtml = `
+                <div id="popup-overlay" class="popup-overlay" onclick="closePopup()">
+                <div class="popup-content">
+                  <img id="popup-content" src="" />
+                </div>
+                </div>
+                `;
+
                 tree.children.splice(gallery.blockIndex, 1, {
                   type: "html",
-                  value: `<div class="image-gallery" style="display: flex; gap: ${gallery.spacing};">`,
+                  value: `<div class="image-gallery">`,
                 }, ...combinedNodes, {
                   type: "html",
-                  value: `</div>`,
+                  value: `</div>${overlayScript}${popupHtml}`,
                 })
               })
           }

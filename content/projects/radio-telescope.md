@@ -79,24 +79,19 @@ Building on what I learned from this initial, small scale experiment, I wanted t
 
 Some of the design concepts I came up with and sketched are shown below:
 
-<center>
-    <img src="attachments/projects/radio-telescope/main_assembly_1.jpeg" width="70%">
-    <img src="attachments/projects/radio-telescope/main_assembly_2.jpeg" width="70%">
-    <img src="attachments/projects/radio-telescope/main_assembly_3.jpeg" width="70%">
-    <img src="attachments/projects/radio-telescope/main_assembly_4.jpeg" width="70%">
-    <img src="attachments/projects/radio-telescope/main_assembly_5.jpeg" width="70%">
-    <img src="attachments/projects/radio-telescope/configuration.jpeg" width="70%">
-</center>
-
+```img-gallery
+path: attachments/projects/radio-telescope/assembly
+columns: 2
+uniform: false
+shadow: 0.1
+```
 
 I also ordered an LNA (*32 dB* Gain) and attached it to a horn antenna, which would have been used as a feed for the 1.2m dish. I built the feed horn by soldering an HVAC adapter to a baby food can, and drilling a hole in the side where I inserted a 90 degree coaxial F-connector and soldered it in place.
 
-<center>
-    <img src="attachments/projects/radio-telescope/feedhorn_1.JPG" width="70%">
-    <img src="attachments/projects/radio-telescope/feedhorn_2.JPG" width="70%">
-    <img src="attachments/projects/radio-telescope/feedhorn_3.jpeg" width="70%">
-    <img src="attachments/projects/radio-telescope/feedhorn_4.jpeg" width="70%">
-</center>
-
+```img-gallery
+path: attachments/projects/radio-telescope/feedhorn
+columns: 2
+uniform: false
+```
 
 
