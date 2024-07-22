@@ -29,5 +29,11 @@ The wave energy converter (WEC) consists of the main buoy and a submergible buoy
 
 Choosing the west coast of Ireland as a potential site location, the Irish electricity market is the envisioned business environment. Based on a custom-developed economic model, several key financial indicators of the WaveWings system are estimated, including a levelized cost of electricity (LCOE) of 65 €/MWh. This is similar to that of conventional floating wind turbines, promising to be a viable contribution to the availability of renewable electricity in the Irish market.
 
-Based on the United Nations Sustainable Development Goals, sustainability has been an important consideration for both the organizational and technical aspects. In particular, sustainability has played a major role during site selection of the wind farm. A life cycle assessment (LCA) has also been performed to estimate, among other sustainability indicators, the global warming potential (GWP).
+Based on the United Nations Sustainable Development Goals, sustainability has been an important consideration for both the organizational and technical aspects. In particular, sustainability has played a major role during site selection of the 
+wind farm. A life cycle assessment (LCA) has also been performed to estimate, among other sustainability indicators, the global warming potential (GWP).
 
+```img-gallery
+path: attachments/projects/wavewings/gallery
+columns: 2
+uniform: true
+```
