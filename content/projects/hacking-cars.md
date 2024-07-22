@@ -3,6 +3,8 @@ title: "Hacking Cars"
 date: 11-5-2018
 ---
 
+<!-- https://oa.upm.es/56222/1/PFC_CRISTINA_LOPEZ_ALONSO_2019.pdf -->
+
 > [!info] 
 >
 > Check out the original post [here](https://hackaday.io/project/164566-how-to-hack-a-car).
