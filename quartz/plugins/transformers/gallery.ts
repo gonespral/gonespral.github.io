@@ -146,13 +146,15 @@ export const GalleryTransformer: QuartzTransformerPlugin<Partial<Options> | unde
                 left: 0;
                 width: 100%;
                 height: 100%;
+                background-color: rgba(255, 255, 255, 0.3); /* Fallback for browsers that don't support backdrop-filter */
                 background-size: cover;
-                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(5px); /* Safari */
+                backdrop-filter: blur(5px);
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 visibility: hidden;
-                opacity: 0;
+                opacity: 0.5;
                 transition: visibility 0s, opacity 0.3s ease;
                 z-index: 1000;
                 }
@@ -171,7 +173,7 @@ export const GalleryTransformer: QuartzTransformerPlugin<Partial<Options> | unde
                 }
 
                 .popup-content img {
-                width: 60%;
+                width: 50%;
                 height: auto;
                 border-radius: ${gallery.radius}px;
                 }

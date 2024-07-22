@@ -3,7 +3,7 @@ title: "Project REBO"
 date: 02-11-2024
 ---
 
-> [!tip]
+> [!info]
 >
 > Check out the original post [here](https://www.linkedin.com/posts/gonespral_excited-to-share-the-culmination-of-months-activity-7159604314347298816-9Bzk/?utm_source=share&utm_medium=member_desktop).
 

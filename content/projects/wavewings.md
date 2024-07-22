@@ -5,11 +5,11 @@ date: 06-28-2024
 
 This is a project carried out for the [Design Synthesis Exercise](https://www.tudelft.nl/en/events/2023/lr/symposium-design-synthesis-exercise) project of the BSc Aerospace Engineering at TU Delft, whose aim is to collaborate in groups of 10 students over a period of 10 weeks to make a design in an aerospace-related field. The project covers the complete design process, from drawing up a program of demands, concept analysis and design, concept selection to the presentation of the final design.
 
-> [!tip]- Read the full report
+> [!info]- Read the full report
 >
 > You can download the paper on the TU Delft repository [here](https://repository.tudelft.nl/record/uuid:0fa058b7-61b4-40fe-85f7-a686cf0c7425).
 
-> [!tip]- Check out the poster
+> [!info]- Check out the poster
 >
 > <img src="attachments/projects/wavewings/poster.png" width="100%">
 

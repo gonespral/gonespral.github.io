@@ -3,7 +3,7 @@ title: Radio Telescope
 date: 02-10-2018
 ---
 
-> [!tip] 
+> [!info] 
 >
 > Check out the original post [here](https://hackaday.io/project/161556-tiny-radio-telescope/details).
 
