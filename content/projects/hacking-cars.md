@@ -5,7 +5,7 @@ date: 11-5-2018
 
 > [!tip] 
 >
-> Check out the original post [here](https://hackaday.io/project/164566-how-to-hack-a-car)
+> Check out the original post [here](https://hackaday.io/project/164566-how-to-hack-a-car).
 
 After reading [this](https://www.wired.com/2015/08/hackers-tiny-device-unlocks-cars-opens-garages/) article about Samy Kamkar's rolljam project (a $32 device which can perform an attack against rolling code systems used in car keyfobs) I quickly became obsessed with the idea of hacking cars and I was amazed by how simple his attack was to perform. After watching _many_ DEFCON talks and researching quite a bit, I finally felt ready to try it out myself.
 

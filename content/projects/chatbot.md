@@ -5,7 +5,7 @@ date: 01-16-2023
 
 > [!tip] 
 >
-> Check out the original post [here](https://www.linkedin.com/pulse/using-gpt-3-teach-chatbot-domain-specific-knowledge-gon%C3%A7alo-nespral-1e/?trackingId=H8KVzy5gTFueviSpSPBHwQ%3D%3D)
+> Check out the original post [here](https://www.linkedin.com/pulse/using-gpt-3-teach-chatbot-domain-specific-knowledge-gon%C3%A7alo-nespral-1e/?trackingId=H8KVzy5gTFueviSpSPBHwQ%3D%3D).
 
 
 The recent public release of ChatGPT has taken the internet by storm, sparking conversation about the seemingly limitless possibilities and implications of this technology. If you’ve tried out the [public research preview](https://chat.openai.com/chat?trk=article-ssr-frontend-pulse_little-text-block), you may have noticed that the model occasionally produces convincing but non-factual text. These are called “hallucinations”, and are an inherent limitation of this technology in its current form. To learn about this issue and how it can be addressed, I decided to play around with OpenAI’s API and build a simple GPT-3 powered chatbot which you can teach any domain-specific knowledge. Before diving into specifics, let’s first understand what the key principles behind this technology are.

@@ -22,19 +22,19 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Syne", // "Syne", // "Source Sans Pro",
+        header: "Source Sans Pro", // "Syne", // "Source Sans Pro",
         body: "Source Sans Pro", // "Source Sans Pro",
         code: "IBM Plex Mono",
       },
       colors: { // https://stephango.com/flexoki
         lightMode: {
-          light: "rgb(16, 15, 15)",
-          lightgray: "rgb(87, 86, 83)",
-          gray: "rgb(135, 133, 128)",
-          darkgray: "rgb(206, 205, 195)",
-          dark: "rgb(206, 205, 195)",
-          secondary: "#3DA5D9",
-          tertiary: "#2364AA",
+          light: "#F9F9F9",
+          lightgray: "rgb(242, 240, 229)",
+          gray: "rgb(183, 181, 172)",
+          darkgray: "rgb(111, 110, 105)",
+          dark: "#353535",
+          secondary: "#3AA99F",
+          tertiary: "#4385BE",
           highlight: "rgba(22, 71, 127, 0)",
         },
         darkMode: {

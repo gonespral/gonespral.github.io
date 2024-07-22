@@ -5,7 +5,7 @@ date: 02-10-2018
 
 > [!tip] 
 >
-> Check out the original post [here](https://hackaday.io/project/161556-tiny-radio-telescope/details)
+> Check out the original post [here](https://hackaday.io/project/161556-tiny-radio-telescope/details).
 
 
 <center>
@@ -27,19 +27,21 @@ The idea is to have a motorised satellite dish, which can be controlled by a Ras
 
 ## Moving the Dish
 
-<img src="attachments/projects/radio-telescope/2.jpeg" width="40%" align="right" style="margin-left: 20px; margin-top: 0px">
-
 I used 3D printed parts I designed to build each axis to move the dish. What I built is essentially and [alt-azimuth mount](https://en.wikipedia.org/wiki/Altazimuth_mount) for the satellite dish. 
 
-**For the altitude axis,** (up and down) I attached a stepper motor to a threaded rod using a [flexible coupling](https://www.amazon.com/OctagonStar-Flexible-Couplings-Printer-Machine%EF%BC%882PCS%EF%BC%89/dp/B01HBPHSII/ref=sr_1_3?ie=UTF8&qid=1538511644&sr=8-3&keywords=stepper+coupler). On the threaded rod I placed a nut, which, as the threaded rod rotates, moves forwards and backwards. Part A (right) is a 3D printed piece which then translates the horizontal motion of the nut into a vertical motion, to move the dish up and down, by pulling it and pushing it. I found that this method worked really well since it allowed for a decent amount of torque, and for precise, small movements. However, I was only able to point the dish between 0° and 50°(altitude), but with a few modifications i'm sure i could fix this.   
+<center>
+    <img src="attachments/projects/radio-telescope/2.jpeg" width="40%">
+</center>
 
-**For the azimuth axis,** (left and right) I ran a ball chain around a 3D printed adapter for the stepper motor, and around the base for the Lazy Susan. As the stepper motor rotates, the top plate of the Lazy Susan will also rotate, moving the dish, which is mounted on top of it. I had a few problems with this design, since the stepper motor had a little trouble rotating because of the weight of all the parts mounted on the turntable, but I managed to make it work in the end.
+For the altitude axis, (up and down movement) I attached a stepper motor to a threaded rod using a [flexible coupling](https://www.amazon.com/OctagonStar-Flexible-Couplings-Printer-Machine%EF%BC%882PCS%EF%BC%89/dp/B01HBPHSII/ref=sr_1_3?ie=UTF8&qid=1538511644&sr=8-3&keywords=stepper+coupler). On the threaded rod I placed a nut, which, as the threaded rod rotates, moves forwards and backwards. Part A (above) is a 3D printed piece which then translates the horizontal motion of the nut into a vertical motion, to move the dish up and down, by pulling it and pushing it. I found that this method worked really well since it allowed for a decent amount of torque, and for precise, small movements. However, I was only able to point the dish between 0° and 50°(altitude), but with a few modifications i'm sure i could fix this.   
+
+For the azimuth axis, (left and right movement) I ran a ball chain around a 3D printed adapter for the stepper motor, and around the base for the Lazy Susan. As the stepper motor rotates, the top plate of the Lazy Susan will also rotate, moving the dish, which is mounted on top of it. I had a few problems with this design, since the stepper motor had a little trouble rotating because of the weight of all the parts mounted on the turntable, but I managed to make it work in the end.
 
 <center>
     <img src="attachments/projects/radio-telescope/3.jpeg" width="70%">
 </center>
 
-## Receiving the Signal on a Raspberry Pi
+## Receiving the Signal
 
 For the Raspberry Pi to be able to measure the power of the signal being received, I used a satellite finder. These are devices used to align antennas after they are installed. They are usually built with a buzzer, which changes pitch depending on the amount of signal being received. For my project, I removed the buzzer and soldered two wires onto the pads where the buzzer used to be:  
 
@@ -67,8 +69,6 @@ After my first test (video at the top of the page), I was able to take an imag
     <img src="attachments/projects/radio-telescope/7.png" width="70%">
 </center>
 
-(Anybody know what those lines are?) Apparently thats stuff inside the wall in my room, but im not sure. 
-
 I then tested the radio telescope outside, but I wasn't able to get any good results. I'm still trying to figure out what went wrong. When I fix the problem I will post the results here.
 
 I consider this project more of an experiment, to see what can be done with a relatively low cost (and tiny) radio telescope. Even though the results aren't great, I learned **a lot** as I worked on this project (about radio astronomy (and radio in general), how to use the Raspberry Pi to communicate with sensors and motors, and how to design my own 3D printed parts). Hopefully, I can apply these skills to future projects.
@@ -77,7 +77,7 @@ I consider this project more of an experiment, to see what can be done with a re
 
 Building on what I learned from this initial, small scale experiment, I wanted to create a slightly larger radio telescope, capable of observing signals on the 21cm hydrogen line. Unfortunately, this project was never fully completed, but I've still shared some of the progress I made.
 
-To do so I sketched up some design concepts for the telescope project. These are shown below:
+Some of the design concepts I came up with and sketched are shown below:
 
 <center>
     <img src="attachments/projects/radio-telescope/main_assembly_1.jpeg" width="70%">
@@ -89,9 +89,14 @@ To do so I sketched up some design concepts for the telescope project. These are
 </center>
 
 
-I also ordered an LNA (*32 dB* Gain) and attached it to my horn antenna which will be used as a feed for the 1.2m dish.
+I also ordered an LNA (*32 dB* Gain) and attached it to a horn antenna, which would have been used as a feed for the 1.2m dish. I built the feed horn by soldering an HVAC adapter to a baby food can, and drilling a hole in the side where I inserted a 90 degree coaxial F-connector and soldered it in place.
 
-I built the feed horn by soldering an HVAC adapter to a baby food can, and drilling a hole in the side where I inserted a 90 degree coaxial F-connector and soldered it in place. The dimensions for this aren't perfect, but hopefully it'll work well enough to be able to receive the hydrogen line.
+<center>
+    <img src="attachments/projects/radio-telescope/feedhorn_1.JPG" width="70%">
+    <img src="attachments/projects/radio-telescope/feedhorn_2.JPG" width="70%">
+    <img src="attachments/projects/radio-telescope/feedhorn_3.jpeg" width="70%">
+    <img src="attachments/projects/radio-telescope/feedhorn_4.jpeg" width="70%">
+</center>
 
 
 

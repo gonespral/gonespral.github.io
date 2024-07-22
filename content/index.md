@@ -3,8 +3,12 @@ title: Welcome
 ---
 
 <center>
-<img src="attachments/me/me2.jpg" width="40%">
+<img src="attachments/me/me2.jpg" width="30%">
 </center>
+
+> [!attention]
+>
+> Site is still under construction
 
 Hi! I'm Gonçalo - 22 and currently studying Aerospace Engineering at TU Delft. I'm passionate about space, engineering, computers, and anything tech, really. In my free time, I like to work on [[projects|side projects]], take [[pics|pictures]] and [[reading|read]].
 
@@ -13,7 +17,7 @@ Always learning.
 Feel free to [reach out to me](contact) if you'd like to discuss any of my projects or collaborate!
 
 <div id="logo">
-  <img src="attachments/me/logo_white.png" width="15%">
+  <img src="attachments/me/logo_black.png" width="15%">
 </div>
 
 <!-- <script>
@@ -42,3 +46,8 @@ Feel free to [reach out to me](contact) if you'd like to discuss any of my proje
     }
   })
 </script> -->
+
+--- 
+
+# Recent Posts
+
