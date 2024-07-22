@@ -45,9 +45,19 @@ Feel free to [reach out to me](contact) if you'd like to discuss any of my proje
 
 ## Recent Posts
 
-## [[wavewings|WaveWings]]
-
+> [!tip] [[wavewings|WaveWings]]
+> Integrated airborne wind energy and wave energy converters to construct a 1 GW renewable energy farm in an effort to contribute to the European Union’s net-zero 2050 goals, created as part of the Design Synthesis Exercise at TU Delft.
 
 ### [[rebo|Project REBO]] 
-A project I've been working on for the past few months. It's a small rover that I'm building from scratch. Check it out!
+A robotic solution to combat drinking can littering and promote recycling by collecting, crushing, and storing aluminum beverage cans while returning the Statiegeld to customers, created as part of the Robotics Minor at TU Delft.
+
+### [[social-media|Social Media Bot]]
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ac libero ultricies tincidunt. Nullam nec purus ac libero ultricies tincidunt.
+
+### [[chatbot|Teaching a Chatbot Domain-Specific Knowledge]]
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ac libero ultricies tincidunt. Nullam nec purus ac libero ultricies tincidunt.
+
+### [[Rocketry|Delft Aerospace Rocket Engineering]]
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ac libero ultricies tincidunt. Nullam nec purus ac libero ultricies tincidunt.
+
 
