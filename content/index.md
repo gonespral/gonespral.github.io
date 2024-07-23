@@ -54,7 +54,10 @@ Detailed design concept for an integrated airborne wind and wave energy converte
 ### [[rebo|Project REBO]]  <small><i> - Feb 11, 2024 </i></small>
 A robotic solution to combat drinking can littering and promote recycling by collecting, crushing, and storing aluminum beverage cans while returning the Statiegeld to customers, created as part of the Robotics Minor at TU Delft.
 
-### [[rocketry|Rocketry]] <small><i> - Oct 23, 2024 </i></small>
+### [[social-media-bot|Social Media Bot]]  <small><i> - September 1, 2023 </i></small>
+Developing a platform for small businesses to automate their online social media presence with generative AI models. The platform handles content generation, scheduling and direct interaction with users through automated comments and replies.
+
+### [[rocketry|Rocketry]] <small><i> - October 1, 2024 </i></small>
 Overview of my work at DARE, the student rocketry team at TU Delft. I've worked on various projects, including the Stratos V rocket, the NEAR team and Project Dodo.
 
 ### [[chatbot|Teaching a Chatbot Domain Knowledge]] <small><i> - Jan 16, 2023 </i></small>
