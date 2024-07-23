@@ -1,6 +1,6 @@
 --- 
 title: Rocketry
-date: 10-01-2020
+date: 01-01-2024
 ---
 
 https://dare.tudelft.nl/projects/near/
